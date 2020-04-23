@@ -16,12 +16,7 @@ class WebServicesController extends Controller
         $data = $this->newUser($req);
         return response()->json([
             'status' => 1,
-            'message' => 'Registration Successful!',
-            'data' => [
-                'name' => $data->name,
-                'email' => $data->email,
-                'pincode' => $data->pincode
-            ]
+            'message' => 'Registration Successful!'
         ], 201);
     }
 }

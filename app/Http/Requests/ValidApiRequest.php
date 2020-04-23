@@ -16,7 +16,6 @@ class ValidApiRequest extends ValidRequest
         throw new HttpResponseException(
             response()->json([
                 'status' => 0,
-                'message' => 'Registration Failed!',
                 'error' => $errors
             ], 422)
         );
