@@ -13,7 +13,7 @@ class WebServicesController extends Controller
 
     public function store(ValidApiRequest $req)
     {
-        $data = $this->newUser($req);
+        $this->newUser($req);
         return response()->json([
             'status' => 1,
             'message' => 'Registration Successful!'

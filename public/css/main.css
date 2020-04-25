@@ -40,6 +40,12 @@ h3 {
     font-weight: 600;
     color: #fff;
 }
+
+.btn-primary[disabled] {
+    background: rgb(75, 73, 73);
+    border: none;
+    cursor: default;
+}
 .alert-success {
     color: rgb(19, 56, 19);
 }
